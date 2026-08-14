@@ -1,0 +1,13 @@
+
+function rotateArray(arr, k) {
+    // Handle cases where k is larger than the array length
+    k = k % arr.length;    
+    // Move the last element to the front k times
+    for (let i = 0; i < k; i++) {
+        let lastElement = arr.pop(); // Remove the last element
+        arr.unshift(lastElement);    // Put it at the very beginning
+    }
+    return arr;
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5], 2));
