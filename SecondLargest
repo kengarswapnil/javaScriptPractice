@@ -1,0 +1,6 @@
+function SecondLargest(arr){
+    arr.sort((a,b) => a-b);
+    console.log(arr[arr.length -2]);
+}
+
+SecondLargest([1,8, 2, 3, 4, 5])
