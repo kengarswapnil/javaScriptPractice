@@ -1,0 +1,19 @@
+function Dupalicate(arr){
+    res = []
+    for(let i=0;i<arr.length;i++){
+       isDupliacte =false;
+        for(let j=i+1;j<arr.length;j++){
+            if(arr[i] == arr[j]){
+                isDupliacte = true;
+                if(!res.includes(arr[i])){
+          res.push(arr[i]);
+        } 
+                break;
+            }
+        }
+    }
+    return res;
+}
+
+let result = Dupalicate([1,2,2,3,3,4,5]);
+console.log(result)
