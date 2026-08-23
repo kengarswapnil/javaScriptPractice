@@ -1,0 +1,19 @@
+function countWords(sentence){
+    let count = 0;
+    let isWord =  false;
+
+    for(let i=0;i<sentence.length;i++){
+        if(sentence[i] !== " " && sentence[i] !== "\t"){
+            if(isWord === false){
+                count++;
+                isWord = true;
+            }
+        }else{
+            isWord = false;
+        }
+    }
+    return count ;
+}
+
+
+console.log(countWords("My name is Swapnil"))
