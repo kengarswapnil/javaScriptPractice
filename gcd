@@ -1,0 +1,12 @@
+
+// let a = 22 ;
+// let b = 33;
+// let gcd = 1;
+
+// for(let i=0;i<=a && i <= b ; i++){
+//     if(a % i === 0 && b % i === 0){
+//        gcd = i;
+//     }
+// }
+
+// console.log("GCD : ",gcd);
