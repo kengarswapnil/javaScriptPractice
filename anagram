@@ -1,0 +1,12 @@
+function anagram( s , s2){
+    if(s.length != s2.length){
+      return false;
+    }
+
+    let a =  s.split('').sort();
+    let b = s2.split('').sort();
+    
+    return a.join('') === b.join('');
+}
+
+console.log(anagram("listen","silent"));
