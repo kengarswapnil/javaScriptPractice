@@ -1,0 +1,28 @@
+function isMatch(s, p) {
+    let i = 0;
+    let j = 0;
+
+    while (i < s.length && j < p.length) {
+
+        if (p[j] === '.' || p[j] === s[i]) {
+            i++;
+            j++;
+        }
+        else if (p[j] === '*') {
+            if (p[j - 1] === s[i] || p[j - 1] === '.') {
+                i++;
+            } else {
+                j++;
+            }
+        }
+        else {
+            return false;
+        }
+    }
+
+    return i === s.length;
+}
+
+console.log(isMatch("aa", "aa"));   // true
+console.log(isMatch("ab", "a"));    // false
+console.log(isMatch("ab", ".*"));   // true
