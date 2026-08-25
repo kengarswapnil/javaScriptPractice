@@ -1,0 +1,18 @@
+// function LongestSub(s){
+//     let maxlen = 0 ;
+//     for(let i=0;i<s.length;i++){
+//         let unique = "";
+//         for(let j=i;j<s.length;j++){
+//             if(unique.includes(s[j])){
+//                 break;
+//             }
+
+//             unique += s[j];
+//             maxlen = Math.max(maxlen,unique.length);
+//         }
+//     }
+
+//     return maxlen;
+// }
+
+// console.log(LongestSub("abbaaja"))
